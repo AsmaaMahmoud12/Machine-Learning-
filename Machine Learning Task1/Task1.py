@@ -24,8 +24,8 @@ print(y_test_8)
 Confusion=confusion_matrix(y_test_8, y_test_pred)
 print(Confusion)
 
-Accuracy=(Confusion[0,0]+Confusion[1,1])/(Confusion[1,1]+Confusion[1,0]+Confusion[0,1] +Confusion[0,0])
-print(Accuracy)
+Accuracy=(Confusion[0,0]+Confusion[1,1])/(Confusion[1,1]+Confusion[1,0]+Confusion[0,1] +Confusion[0,0]) #Number of correct classified points / Total number of points 
+print(Accuracy) #0.9433333333333334
 
 multiclass=sgd_clf.fit(X_train,y_train)
 y_test_predict=sgd_clf.predict(X_test)
